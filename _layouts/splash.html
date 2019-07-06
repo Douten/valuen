@@ -1,0 +1,137 @@
+---
+layout: default
+---
+
+<style>
+
+  .page-bg{
+    filter: brightness(.65);
+  }
+
+  .home .content-wrapper {
+    animation-name: none;
+  }
+
+  @media (min-width: 820px){
+
+  #header a, .transparent-header #header a {
+    color: #fff;
+  }
+
+  .transparent-header #header a.btn {
+
+      border-color: #fff;
+      color: #fff;
+
+  }
+  }
+
+  .transparent-header #header a.btn:hover{
+    border-color: #e7492d;
+  }
+
+  .home-page .cta{
+    animation: showinFirst 10s 1 forwards;
+    color: #fff;
+  }
+
+  #header, .footer{
+    animation: showinSecond 10s 1 forwards;
+  }
+
+    h1{
+      color: white;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+   h1 {
+    font-size:5vw;
+   }
+  }
+    h1 > span{
+      background: none;
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+
+  span.initial-text {
+    animation: showup 5s 1 forwards;
+    padding: 0 .4ch;
+  }
+
+  span.remain-text {
+    text-align: left;
+    width:0px;
+    animation: reveal 5s 1 forwards;
+  }
+
+  span.remain-text span {
+    margin-left:-100%;
+    animation: slidein 5s 1 forwards;
+  }
+
+  @keyframes showup {
+      0% {opacity:0;}
+      15% {opacity: 0;}
+      30% {opacity: 1;}
+      100% {opacity:1;}
+  }
+
+  @keyframes slidein {
+      0% { margin-left: -22ch; }
+      30% { margin-left: -22ch; }
+      45% { margin-left: 0px;}
+      100% { margin-left: 0px;;}
+  }
+
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      40% {opacity:1;width:0px;}
+      55% {width: 20.8ch;}
+      100% {width: 20.8ch;}
+  }
+
+  @keyframes showinFirst {
+      0% {opacity:0;}
+      30% {opacity: 0;}
+      45% {opacity:1;}
+      100% {opacity: 1;}
+  }
+
+  @keyframes showinSecond {
+      0% {opacity:0;}
+      50% {opacity: 0;}
+      60% {opacity:1;}
+      100% {opacity: 1;}
+  }
+
+  .btn.cta
+  {
+    background: none;
+    border: 1px solid white;
+    transition: all .5s, border .35s .4s;
+  }
+
+  .btn.cta:hover{
+    word-spacing: 1ch;
+    letter-spacing: 1ch;
+    border-color: transparent;
+    transition: all .8s .1s, border .2s;
+  }
+
+  #tot_badge{
+    display: none;
+  }
+
+  .footer a{
+    color: #fff;
+  }
+
+
+    page.background
+</style>
+
+<div></div>
+
+page.tagline page.button
